@@ -1,0 +1,10 @@
+header {
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(107, 198, 247);
+  background-image: url("/images/argyle.png");
+}

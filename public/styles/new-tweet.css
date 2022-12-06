@@ -1,0 +1,25 @@
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-tweet:hover {
+  box-shadow: 10px 5px 5px red;
+  background-color: rgb(237, 101, 16);
+}
+
+.icon {
+  color:rgb(12, 233, 207)
+}
+
+.icon:hover {
+  color: chartreuse;
+}
+
+article.tweet header{
+  height: 100px;
+  background-color: black;
+}

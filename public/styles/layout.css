@@ -10,16 +10,40 @@ html {
   box-sizing: inherit;
 }
 
+
 /*
- * Global layout stuff
- */
+* Global layout stuff
+*/
 
 body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
+
+main {
+  width: 90%;
+  text-align: center;
+  background-color: #f4f1ec;
+}
+
+.textRight {
+  text-align: end;
+}
+
+.iconRight {
+  float: right;
+}
+
+.textCenter {
+  text-align: center;
+}
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+ /* nav {
+  font-family: 'Bungee', cursive;
+ } */
