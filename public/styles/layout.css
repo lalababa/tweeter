@@ -23,13 +23,14 @@ body {
 }
 
 main {
-  width: 90%;
+  width: 100%;
   text-align: center;
   background-color: #f4f1ec;
 }
 
-.textRight {
-  text-align: end;
+.toTheRight {
+  display: flex;
+  justify-content: space-between;
 }
 
 .iconRight {
@@ -40,6 +41,14 @@ main {
   text-align: center;
 }
 
+.text-left {
+  align-items: left;
+}
+
+.text-right {
+  align-items: right;
+}
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
@@ -47,3 +56,42 @@ main {
  /* nav {
   font-family: 'Bungee', cursive;
  } */
+
+ /* Tablet Styles */
+@media only screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .feature {
+    width: 33.3%;
+    line-height: 600px;
+  }
+
+  .content {
+    width: 66.7%;
+    float: right
+  }
+
+  .footer {
+    clear: right;
+  }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+  header {
+    width: 100vh;
+    margin-right: 10%;
+  }
+  
+  main {
+    width: 50%;
+    margin-left: 10%
+  }
+
+  body {
+    display: flex;
+  }
+
+}

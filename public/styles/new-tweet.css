@@ -4,11 +4,21 @@
   width: auto;
   align-items: center;
   justify-content: center;
+  width: 100%;
+}
+
+textarea {
+  width: 1000px;
+}
+
+.new-tweet-area {
+  border : none;
+  background: transparent;
 }
 
 .new-tweet:hover {
   box-shadow: 10px 5px 5px red;
-  background-color: rgb(237, 101, 16);
+  /* background-color: rgb(237, 101, 16); */
 }
 
 .icon {
@@ -20,6 +30,14 @@
 }
 
 article.tweet header{
+  display: flex;
   height: 100px;
-  background-color: black;
+  width: 1000px;
+  background-color: #f4f1ec;
+  background-image: none;
+  text-align: left;
+}
+
+article.tweet footer {
+  text-align:left;
 }
