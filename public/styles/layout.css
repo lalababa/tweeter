@@ -87,7 +87,8 @@ main {
   
   main {
     width: 50%;
-    margin-left: 10%
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   body {

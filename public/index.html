@@ -87,7 +87,9 @@
 
       <form id="post-tweets" method="POST" action="/tweets/">
         <label for="tweet-text"></label>
-        <textarea name="text" class="new-tweet-area" id="tweet-text">What are you humming about?</textarea>
+        <p>What are you humming about?</p>
+        <textarea name="text" class="new-tweet-area" id="tweet-text"></textarea>
+        <p class="tweeter-error" hidden></p>
         <hr>
         <div class="toTheRight">
           <button type="submit">Tweet</button>
@@ -96,7 +98,7 @@
       </form>
 
       <section id="tweets-container">
-          alert('there`s a validation code!');
+          
       </section>
     </section>
     <!-- </new-tweet> -->

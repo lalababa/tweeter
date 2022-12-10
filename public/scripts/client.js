@@ -72,16 +72,16 @@ $(document).ready(function() {
     <article class="tweet">
     <header>
     
-    <div class="text-left">${data.user.name}<span class="text-right">${data.user.handle}</span>
-    </div>
+    <div class="toTheRight">${data.user.name}${data.user.handle}</div>
     
-    <div class="text-left">${data.content.text}</div>
     </header>
+    <div class="content">${data.content.text}</div>
     
     <hr>
     <footer>
     ${timeago.format(data.created_at)}<i class="iconRight fa-solid fa-pen icon"></i>
     </footer>
+    
     </article>
     `;
     return element;
@@ -103,12 +103,22 @@ $(document).ready(function() {
   $("#post-tweets").submit(function (event) {
     // alert("handle for a .submit() called");
     event.preventDefault();
+
     let serialization = $(this).serialize();
+    
+    if (serialization === "text=" || serialization.length < 6 || serialization.length > 147) {
+      $(".tweeter-error").show().text("🚫no input or tweeter so long!🚫").css({color: 'red'});
+      return false;
+    };
 
     $.post("/tweets", serialization).done((data) => {
+
       $('#tweets-container').empty();
+      $(".tweeter-error").hide().text("");
+      $('#tweet-text').val("");
       loadTweets();
     })
+    
   });
 
   // renderTweets(data);

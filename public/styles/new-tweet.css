@@ -6,6 +6,10 @@
   justify-content: center;
   width: 100%;
 }
+.tweets-header {
+  display: flex;
+  justify-content: space-between;
+}
 
 textarea {
   width: 1000px;
@@ -16,7 +20,7 @@ textarea {
   background: transparent;
 }
 
-.new-tweet:hover {
+article.tweet:hover {
   box-shadow: 10px 5px 5px red;
   /* background-color: rgb(237, 101, 16); */
 }
@@ -29,15 +33,30 @@ textarea {
   color: chartreuse;
 }
 
+article.tweet {
+  text-align: left;
+  border: 2px solid black;
+  overflow-wrap: break-word;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+article .content {
+  overflow-wrap: anywhere;
+  inline-size: 100%;
+}
+
 article.tweet header{
   display: flex;
-  height: 100px;
+  padding: 20px 0 ;
+  height: auto;
   width: 1000px;
   background-color: #f4f1ec;
   background-image: none;
+  align-items: flex-start;
+  justify-content: left;
   text-align: left;
 }
 
-article.tweet footer {
-  text-align:left;
-}
+/* article.tweet footer {
+} */
