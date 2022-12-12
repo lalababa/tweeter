@@ -16,7 +16,7 @@ This repository is the starter code for the project: Students will fork and clon
 ## Screen Shots
 
 !["Screenshots of big screen](https://github.com/lalababa/tweeter/blob/master/docs/big%20screen%20main%20page.png)
-!["Screenshots of small screen]()
+!["Screenshots of small screen](https://github.com/lalababa/tweeter/blob/master/docs/small%20screen%20main%20page.png)
 
 ## Dependencies
 
