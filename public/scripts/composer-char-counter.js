@@ -2,12 +2,12 @@ $(document).ready(function() {
   // --- our code goes here ---
   console.log("The counter file is ready");
   
-  $("#tweet-text").on("keyup", function ()  {
-    let tweetText = $("#tweet-text").val();
+  $("#tweet-text").on("input", function ()  {
+    const tweetText = $("#tweet-text").val();
     
-    let remain = 140 - tweetText.length
+    const remain = 140 - tweetText.length
     
-    //connect js and html
+    //text remain to the counter class in html
     $(".counter").text(remain);
 
     if (remain < 0) {
