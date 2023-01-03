@@ -12,6 +12,12 @@ This repository is the starter code for the project: Students will fork and clon
 3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 4. Go to <http://localhost:8080/> in your browser.
 
+
+## Screen Shots
+
+!["Screenshots of big screen](https://github.com/lalababa/tweeter/blob/master/docs/big%20screen%20main%20page.png)
+!["Screenshots of small screen](https://github.com/lalababa/tweeter/blob/master/docs/small%20screen%20main%20page.png)
+
 ## Dependencies
 
 - Express
