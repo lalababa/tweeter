@@ -58,6 +58,7 @@ $(document).ready(function() {
 
     let serialization = $(this).serialize();
     
+    //show errors where there is some problems
     if (serialization === "text=" || serialization.length < 6 || serialization.length > 147) {
       $(".tweeter-error").show().text("🚫no input or tweeter so long!🚫").css({color: 'red'});
       return false;
@@ -65,10 +66,19 @@ $(document).ready(function() {
 
     $.post("/tweets", serialization).done((data) => {
 
+      //empty whole tweet container
       $('#tweets-container').empty();
+
+      //hide error bar
       $(".tweeter-error").hide().text("");
+
+      //set tweet box to empty
       $('#tweet-text').val("");
+
+      //push tweets
       loadTweets();
+
+      //set counter back to 140 after tweet
       $('.counter').text(140);
     })
     

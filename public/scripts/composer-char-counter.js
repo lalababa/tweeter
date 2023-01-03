@@ -10,6 +10,7 @@ $(document).ready(function() {
     //text remain to the counter class in html
     $(".counter").text(remain);
 
+    //determine counter color using judgement
     if (remain < 0) {
       $('.counter').css({color: 'red'});
     } else {
