@@ -48,12 +48,13 @@ article .content {
 
 article.tweet header{
   display: flex;
+  flex-direction: row;
   padding: 20px 0 ;
   height: auto;
   width: 1000px;
   background-color: #f4f1ec;
   background-image: none;
-  align-items: flex-start;
-  justify-content: left;
+  /* align-items: ; */
+  justify-content: space-between;
   text-align: left;
 }

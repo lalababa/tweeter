@@ -65,7 +65,7 @@
 
     <span>tweeter</span>
     <div class="iconRight"><p style="display: contents;">Write a new Tweet</p>
-    <div><i class="fa-solid fa-pen"></i></div></div>
+    <div><i class="iconRight fa-solid fa-arrow-down"></i></div></div>
     
   </nav>
 
@@ -90,8 +90,9 @@
       <form id="post-tweets" method="POST" action="/tweets/">
         <label for="tweet-text"></label>
         <p>What are you humming about?</p>
-        <textarea name="text" class="new-tweet-area" id="tweet-text"></textarea>
         <p class="tweeter-error" hidden></p>
+        <textarea name="text" class="new-tweet-area" id="tweet-text"></textarea>
+        
         <hr>
         <div class="toTheRight">
           <button type="submit">Tweet</button>

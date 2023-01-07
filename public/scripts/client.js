@@ -24,9 +24,11 @@ $(document).ready(function() {
   const createTweetElement = function (data){
     const element = `
     <article class="tweet">
+
     <header>
+    <span><img src="${data.user.avatars}" height="35">    ${data.user.name}</span>
+    <span style="iconRight" height="35">${data.user.handle}</span>
     
-    <div class="toTheRight">${data.user.name}${data.user.handle}</div>
     
     </header>
     <div class="content">${data.content.text}</div>
