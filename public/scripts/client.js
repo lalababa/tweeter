@@ -10,7 +10,6 @@ $(document).ready(function() {
   
   
   const renderTweets = function(tweets) {
-    // let result = [];
 
     // loops through tweets
     for (let i in tweets.reverse()) {
@@ -19,10 +18,9 @@ $(document).ready(function() {
       $('#tweets-container').append(createTweetElement(tweets[i]));
     }
     
-    
-    // takes return value and appends it to the tweets container
   };
   
+  //new tweet format and element
   const createTweetElement = function (data){
     const element = `
     <article class="tweet">
@@ -43,6 +41,7 @@ $(document).ready(function() {
     return element;
   };
 
+  //grasp info after user tweets something
   const loadTweets = function() {
     $.ajax('http://localhost:8080/tweets', {method : 'GET'})
     .done((data) => {
@@ -52,8 +51,9 @@ $(document).ready(function() {
 
   loadTweets();
 
+  //steps after post tweet
   $("#post-tweets").submit(function (event) {
-    // alert("handle for a .submit() called");
+    
     event.preventDefault();
 
     let serialization = $(this).serialize();
@@ -83,8 +83,6 @@ $(document).ready(function() {
     })
     
   });
-
-  // renderTweets(data);
   
 })
 
