@@ -61,8 +61,11 @@ $(document).ready(function() {
     let serialization = $(this).serialize();
     
     //show errors where there is some problems
-    if (serialization === "text=" || serialization.length < 6 || serialization.length > 147) {
-      $(".tweeter-error").show().text("🚫no input or tweeter so long!🚫").css({color: 'red'});
+    if (serialization === "text=" || serialization.length < 6) {
+      $(".tweeter-error").show().text("🚫no input🚫").css({color: 'red'});
+      return false;
+    } else if (serialization.length > 147) {
+      $(".tweeter-error").show().text("🚫tweeter so long!🚫").css({color: 'red'});
       return false;
     };
 
