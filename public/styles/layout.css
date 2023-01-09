@@ -28,6 +28,18 @@ main {
   background-color: #f4f1ec;
 }
 
+.redOne {
+  color: red;
+}
+
+.leaveMargin {
+  margin:3px;
+}
+
+.logoFont {
+  font-size: larger;
+}
+
 .toTheRight {
   display: flex;
   justify-content: space-between;

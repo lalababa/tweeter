@@ -35,7 +35,7 @@ $(document).ready(function() {
     
     <hr>
     <footer>
-    ${timeago.format(data.created_at)}<i class="iconRight fa-solid fa-pen icon"></i><b></b><i class="iconRight fa-regular fa-flag icon"></i><i class="fa-sharp fa-solid fa-thumbs-up iconRight icon"></i>
+    ${timeago.format(data.created_at)}<i class="iconRight fa-solid fa-pen icon leaveMargin"></i><b></b><i class="iconRight fa-regular fa-flag icon leaveMargin"></i><i class="fa-sharp fa-solid fa-thumbs-up iconRight icon leaveMargin"></i>
     </footer>
     
     </article>
